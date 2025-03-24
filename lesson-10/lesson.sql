@@ -44,7 +44,7 @@ select * from Employees_new emp3
 	on emp2.ManagerID = mgr1.EmployeeID) mgr2
 on emp3.ManagerID = mgr2.EmployeeID
 
-
+--////////////////////////////
 ;with cte as(
 	select *, 0 as Depth from Employees_new where ManagerID is NULL
 
